@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-copatible" content="IE-edge">
+    <meta name="viemport" content="width=device-width, initial-scale=1.0">
+	<title>GEAC</title>
+	<link rel="stylesheet" type="text/css" href="estilos/stylesprueba.css">
+</head>
+<body>
+	<header class="header">
+		<p> Grupo Escolar de Apoyo Comunitario </p>
+	</header>
+	<div class="navbar">
+		<h1> GEAC </h1>
+		<nav class="menu-container">
+			<ul class="menu">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="nosotros.html">Nosotros</a></li>
+				<li><a href="contacto.html">Unete</a></li>
+			</ul>
+            <div class="menu-toggle" id="mobile-menu">
+				<img src="images/menu1.png" alt="Menú">
+            </div>
+		</nav>
+    </div>
+	<section class="flex-center">
+        <section id="fondo" class="flex-center">
+			<div class="texto">
+                <h1> APOYANDO  A  LA
+				<br> COMUNIDAD DE TABASCO </h1>
+                <p> ¡Bienvenido a GEAC, grupo dedicado a 
+					<br>  el apoyo  alimentario de la comunidad de  Tabasco!</p>
+            </div>
+		</section>
+	</section>
+	<div class="header-container">
+		<h1 class="title"> OBJETIVOS </h1>
+	</div>
+	<div class="container1">
+        <div class="product">
+            <img src="images/despensa.jpg" alt="Apoyo Comunitario">
+            <h2>APOYO COMUNITARIO</h2>
+            <p>Fomentar el apoyo entre las personas que comparten hogares, escuelas, vecindarios, lugares de trabajo, organizaciones y otros entornos comunitarios.</p>
+            </p>
+        </div>
+        <div class="product">
+            <img src="images/img3.jpg" alt="Hambre cero">
+            <h2>HAMBRE CERO</h2>
+            <p>Construir un espacio donde el hambre cero sea una pieza fundamental para un futuro mejor para todos. Estos entornos seran accesibles para todos el que lo necesite.</p>
+          
+        </div>
+        <div class="product">
+            <img src="images/apoyo.jpg" alt="Ayuda a los demás">
+            <h2>AYUDA A LOS DEMAS</h2>
+            <p>Vivir en sociedades pacíficas y colaborativas que nos brindan seguridad y apoyo cuando lo necesitamos. </p>
+            
+        </div>
+    </div>
+	<section class="ultima-donacion">
+        <div class="video">
+            <center><video src="videos/despensa.mp4" autoplay muted controls></video></center>
+        </div>
+        <div class="descripcion">
+            <h2>Última Donación</h2>
+            <p>Queremos compartir con ustedes que recientemente realizamos una donación a la Sra. Guadalupe para brindarle apoyo en estos tiempos difíciles. 
+			<br>La Sra. Guadalupe es una miembro respetada de nuestra comunidad que ha enfrentado dificultades económicas recientes. Reconociendo su necesidad 
+			<br>de asistencia, decidimos colaborar para proporcionarle una despensa básica que incluye alimentos esenciales y productos de primera necesidad. 
+			<br>Agradecemos sinceramente a todos aquellos que contribuyeron a esta causa con su generosidad y apoyo. Cada gesto de bondad y solidaridad cuenta 
+			<br>y contribuye a construir un mundo más compasivo y justo para todos.</p>
+		</div>
+	</section>
+	<footer>
+		<div class="datos-empresa">
+			<h1>GEAC</h1>
+			<p>Ubicación: Cto. Municipal 42, Col. Gaviotas Norte, 86099 Villahermosa, Tabasco, México.</p>
+			<p>Tel: +9931109483</p>
+			
+		</div>
+		<ul class="menu-vertical">
+			<h2>Menú</h2>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="nosotros.html">Nosotros</a></li>
+			<li><a href="contacto.html">Unete</a></li>
+		</ul>
+		<div class="formulario-contacto">
+			<h2>Contacta con nosotros</h2>
+			<form action="#" method="post">
+				<input type="text" name="nombre" placeholder="Nombre" required><br>
+				<input type="email" name="email" placeholder="Correo electrónico" required><br>
+				<textarea name="mensaje" rows="4" placeholder="Mensaje" required></textarea><br>
+				<input type="submit" value="Enviar">
+			</form>
+		</div>
+		</footer>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				const menuToggle = document.getElementById('mobile-menu');
+				const menuNav = document.querySelector('.menu');
+	
+				menuToggle.addEventListener('click', function() {
+					menuNav.classList.toggle('active');
+				});
+			});
+		</script>
+</body>
+</html>

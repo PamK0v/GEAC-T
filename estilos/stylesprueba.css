@@ -1,0 +1,425 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    flex-wrap: wrap;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  .header {
+    background-color: #866239;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header p {
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  @media screen and (max-width:800px) {
+    .header {
+      height: 50px;
+      display: flex;
+    }
+
+    .header p {
+      font-size: 14px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: bold;
+    }
+  }
+  
+  .navbar {
+    background-color: #fff;
+    height: 65px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding: 5px 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar h1 {
+    font-size: 35px;
+    width: 89%;
+    text-align: left;
+    padding: 8px 20px;
+    color: #000000;
+    margin: 0;
+  }
+  
+  nav {
+    width: 800px;
+    text-align: right;
+    display: flex;
+    padding: 6px 20px;
+    height: 4em;
+    color: #333;
+    align-items: center;
+  }
+
+  ul.menu {
+    float: right;
+  }
+
+  nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    text-align: right;
+    font-size: 15px;
+  }
+
+  nav li {
+    display: inline-block;
+    padding: 6px 6px;
+  }
+  
+  nav ul li:hover {
+    background: #866239;
+  }
+
+  nav a:hover {
+    color: #fff;
+  }
+
+  .navbar a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle img {
+    display: flex;
+    width: 40px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1054px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-container {
+        position: relative;
+        justify-content: flex-end; 
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu-toggle.active img:first-child {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle.active img:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active img:last-child {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .menu-toggle img {
+        transition: all 0.3s ease;
+        margin-right: 20px;
+    }
+    .formulario-contacto {
+      width: 50%;
+  }
+}
+
+  nav a {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #333;
+    text-align: right;
+    font-size: 15px;
+  }
+  
+  nav ul li:hover {
+    background: #b3b3b3;
+  }
+
+  nav a:hover {
+    color: #fff;
+  }
+
+  .navbar a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #fondo {
+    width: 100%;
+    height: 500px;
+    background-image: url(tabasco3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .texto {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .texto h1 {
+    color: white;
+    font-size: 45px;
+    padding: 0px;
+    line-height: 1.2;
+    margin: 2px;
+    text-align: center;
+  }
+
+  .texto p {
+    color: white;
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0px;
+    margin-top: 2px;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .ultima-donacion {
+    background-color: #fff;
+    padding: 20px;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .descripcion h2 {
+    text-align: center;
+    color: #333;
+    font-size: 25px;
+  }
+
+  .descripcion p {
+    text-align: center;
+    color: #333;
+    margin-top: 7px;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 50px;
+  }
+  
+  .video {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  video {
+    width: 500px;
+    height: 350px;
+  }
+
+  @media screen and (max-width: 900px) {
+    video {
+      width: 400px;
+      height: 250px;
+    }
+  }
+
+  .header-container {
+    height: 90px;
+    overflow: hidden;
+    background: linear-gradient(70deg, #f8f5f5, rgb(207, 180, 150), rgb(248, 245, 245));
+    text-align: center;
+    align-items: center;
+  }
+
+  .title {
+    margin-top: 28px;
+    color: #333;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .container1 {
+    display: flex;
+    background-color: #fff;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .product {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #ffffff; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .product:hover {
+    transform: translateY(-5px);
+  }
+
+  .product img {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .product h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .product p {
+    color: #666;
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 10px;
+  }
+
+  .product p.price {
+    font-weight: bold;
+    color: #000000;
+    font-size: 1.3rem;
+  }
+
+  footer {
+    background-color: #866239;
+    width: -webkit-fill-available;
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+  }
+
+  .datos-empresa {
+    width: 30%;
+    padding-top: 0px;
+    font-size: 16px;
+    color: #ffffff;
+  }
+
+  .datos-empresa h1 {
+    color: #ffffff;
+    margin: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .datos-empresa a {
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+  }
+
+  .menu-vertical {
+    list-style-type: none;
+    padding: 5px 5px;
+    margin: 40px;
+  }
+
+  .menu-vertical h2 {
+    color: #ffffff;
+    padding-top: 8px;
+  }
+
+  .menu-vertical li {
+    margin-bottom: 10px;
+  }
+
+  .menu-vertical li a {
+    text-decoration: none;
+    text-align: left;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  .formulario-contacto {
+    width: 40%;
+    margin-top: 0px;
+  }
+
+  .formulario-contacto h2 {
+    color: #ffffff;
+    margin: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .formulario-contacto input[type="text"],
+  .formulario-contacto input[type="email"],
+  .formulario-contacto textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .formulario-contacto input[type="submit"] {
+    background-color: #63360be0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .formulario-contacto input[type="submit"]:hover {
+    background-color: #000000;
+  }
